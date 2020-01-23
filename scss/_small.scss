@@ -1,0 +1,77 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+  
+  /*  apply a natural box layout model to all elements  */
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+header {
+    display: flex;
+}
+
+#headerdiv {
+    margin-left: 2%;
+}
+
+  header h1 {
+    font-size: 2rem;
+    margin-top: 2%;
+  }
+
+  ul.menu {
+    display: flex;
+    background-color: gray;
+}
+
+ul.menu li {
+    padding: 1.2rem .5rem;
+} 
+
+main {
+    background-color: red;
+    padding-bottom: 2%;
+}
+
+main div.fruitimg {
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 2%;
+    // margin: 0 2%;
+    justify-content: space-between;
+}
+
+header, nav, main, footer {
+    max-width: 71.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure {
+    flex-basis: 49%;
+    margin-bottom: 2%;
+}
+
+main img {
+    width: 100%;
+}
+
+
+main h1 {
+    padding: 1rem 0 .2rem 2%;
+    font-size: 1.6rem;
+}
+
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+
+  }
