@@ -1,5 +1,18 @@
-// figure {
-//     flex-basis: 23.5%;
-//     margin-bottom: 2%;
-//     // justify-content: center; 
-// }
+figure {
+    flex-basis: 23.5%;
+    margin-bottom: 2%;
+    // justify-content: center; 
+}
+
+main div.fruitimg {
+    // display:flex;
+    // flex-wrap: wrap;
+    margin: 0;
+    // // margin: 0 2%;
+    // justify-content: space-between;
+}
+
+#last {
+    margin-right: 0;
+    margin-left: 0;
+}

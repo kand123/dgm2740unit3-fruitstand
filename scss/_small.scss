@@ -12,29 +12,68 @@ html {
   }
 
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 92px auto;
 }
+
+
 
 #headerdiv {
     margin-left: 2%;
 }
 
-  header h1 {
-    font-size: 2rem;
-    margin-top: 2%;
+header img {
+    height: 100px;
+}
+  
+header h1 {
+    font-size: 2.5rem;
+    margin-top: 2.5rem;
+    font-family: 'Shadows Into Light', cursive;
+    color: #333;
+  }
+
+
+  header h2 {
+    font-family: 'Shadows Into Light', cursive;
+    color: #333;
   }
 
   ul.menu {
     display: flex;
-    background-color: gray;
+    background-color: $menuColor;
 }
 
-ul.menu li {
-    padding: 1.2rem .5rem;
-} 
+// ul.menu li {
+    
+    
+
+// } 
+
+nav ul li:first-child a {border-left:none;}
+
+ nav ul li a {
+    border-left: 1px solid #777;
+    display: block;
+    background-color: lighten($menuColor, 10%);
+    color: #222;
+    text-decoration: none;
+    padding: .8rem .5rem;
+}
+
+
+
+
+.active a {
+      background-color: darken($menuColor, 20%);
+      color: #eee;
+}
+nav ul li a:hover {
+    background-color: lighten($menuColor, 20%);
+    color: #000;
+}
 
 main {
-    background-color: red;
     padding-bottom: 2%;
 }
 
@@ -57,21 +96,36 @@ figure {
     margin-bottom: 2%;
 }
 
+figcaption{
+    text-align: center;
+}
+
 main img {
     width: 100%;
 }
 
 
 main h1 {
-    padding: 1rem 0 .2rem 2%;
+    padding: 1.5rem 0 .2rem 2%;
     font-size: 1.6rem;
 }
 
 
 footer {
     text-align: center;
-    background-color: black;
-    color: white;
+    background-color: #ccc;
+    color: #222;
     padding: 1rem 0;
+   
 
   }
+
+  ul.menu li {
+    // letter-spacing: 2px;
+    // border: none;
+    // border-right: 1px solid #333;
+    width: 25%;
+    text-align: center;
+  }
+
+ 
