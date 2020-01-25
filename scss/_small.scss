@@ -12,15 +12,20 @@ html {
   }
 
 
-  body {
+body {
     font-family: 'Open Sans', sans-serif;
   }
+
+  header, nav, main, footer {
+    max-width: 71.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 header {
     display: grid;
     grid-template-columns: 92px auto;
 }
-
-
 
 #headerdiv {
     margin-left: 2%;
@@ -33,17 +38,13 @@ header img {
 header h1 {
     font-size: 1.8rem;
     margin-top: 2.5rem;
-    font-family: 'Shadows Into Light', cursive;
-    color: #333;
-    // font-family: 'Pacifico', cursive;
-    // font-family: 'Sigmar One', cursive;
-    font-family: 'Patrick Hand', cursive;
+    color: $headerFont;
     font-family: 'Unica One', cursive;
   }
 
 
   header h2 {
-    color: #333;
+    color: $headerFont;
     font-size: 1rem;
     letter-spacing: .11rem;
   }
@@ -86,14 +87,7 @@ main div.fruitimg {
     flex-wrap: wrap;
     margin: 0 2%;
     // margin: 0 2%;
-    justify-content: space-between;
-    
-}
-
-header, nav, main, footer {
-    max-width: 71.25rem;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-between
 }
 
 figure {
@@ -109,7 +103,6 @@ figcaption{
 main img {
     width: 100%;
 }
-
 
 main h1 {
     padding: 1.5rem 0 .2rem 2%;
