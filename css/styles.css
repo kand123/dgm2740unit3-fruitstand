@@ -60,7 +60,7 @@ ul.menu { display: flex; background-color: #95BD45; }
 
 nav ul li:first-child a { border-left: none; }
 
-nav ul li a { border-left: 1px solid #888; display: block; background-color: #aaca6b; color: #222; text-decoration: none; padding: .8rem .5rem; }
+nav ul li a { border-left: 1px solid #888; display: block; background-color: #aaca6b; color: #222; text-decoration: none; padding: .8rem .05rem; }
 
 .active a { background-color: #5a7329; color: #eee; }
 
@@ -84,10 +84,12 @@ footer { text-align: center; background-color: #ccc; color: #222; padding: 1rem 
 
 @media only screen and (min-width: 560px) { figure { flex-basis: 32%; margin-bottom: 2%; }
   #last { margin-right: auto; margin-left: 2%; }
-  ul.menu li { width: auto; text-align: center; } }
+  ul.menu li { width: auto; text-align: center; }
+  nav ul li a { padding: .8rem .45rem; } }
 @media only screen and (min-width: 1028px) { figure { flex-basis: 23.5%; margin-bottom: 2%; }
   main div.fruitimg { margin: 0; }
   #last { margin-right: 0; margin-left: 0; }
   main h1 { padding-left: 0; }
   header h1 { font-size: 2rem; }
-  header h2 { letter-spacing: .18rem; } }
+  header h2 { letter-spacing: .18rem; }
+  nav ul li a { padding: .8rem .6rem; } }
