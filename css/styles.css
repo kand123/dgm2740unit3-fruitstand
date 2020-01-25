@@ -42,25 +42,29 @@ html { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
 /*  apply a natural box layout model to all elements  */
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
+body { font-family: 'Open Sans', sans-serif; }
+
 header { display: grid; grid-template-columns: 92px auto; }
 
 #headerdiv { margin-left: 2%; }
 
 header img { height: 100px; }
 
-header h1 { font-size: 2.5rem; margin-top: 2.5rem; font-family: 'Shadows Into Light', cursive; color: #333; }
+header h1 { font-size: 1.8rem; margin-top: 2.5rem; font-family: 'Shadows Into Light', cursive; color: #333; font-family: 'Patrick Hand', cursive; font-family: 'Unica One', cursive; }
 
-header h2 { font-family: 'Shadows Into Light', cursive; color: #333; }
+header h2 { color: #333; font-size: 1rem; letter-spacing: .11rem; }
 
 ul.menu { display: flex; background-color: #95BD45; }
 
 nav ul li:first-child a { border-left: none; }
 
-nav ul li a { border-left: 1px solid #777; display: block; background-color: #aaca6b; color: #222; text-decoration: none; padding: .8rem .5rem; }
+nav ul li a { border-left: 1px solid #888; display: block; background-color: #aaca6b; color: #222; text-decoration: none; padding: .8rem .5rem; }
 
 .active a { background-color: #5a7329; color: #eee; }
 
-nav ul li a:hover { background-color: #c0d890; color: #000; }
+nav ul li a:hover { background-color: #d5e5b6; color: #000; }
+
+ul.menu li { width: 25%; text-align: center; }
 
 main { padding-bottom: 2%; }
 
@@ -68,21 +72,22 @@ main div.fruitimg { display: flex; flex-wrap: wrap; margin: 0 2%; justify-conten
 
 header, nav, main, footer { max-width: 71.25rem; margin-left: auto; margin-right: auto; }
 
-figure { flex-basis: 49%; margin-bottom: 2%; }
+figure { flex-basis: 49%; margin-bottom: 3%; }
 
-figcaption { text-align: center; }
+figcaption { text-align: center; font-size: .9rem; }
 
 main img { width: 100%; }
 
-main h1 { padding: 1.5rem 0 .2rem 2%; font-size: 1.6rem; }
+main h1 { padding: 1.5rem 0 .2rem 2%; font-size: 1.5rem; }
 
-footer { text-align: center; background-color: #ccc; color: #222; padding: 1rem 0; }
-
-ul.menu li { width: 25%; text-align: center; }
+footer { text-align: center; background-color: #ccc; color: #222; padding: 1rem 0; font-size: .9rem; }
 
 @media only screen and (min-width: 560px) { figure { flex-basis: 32%; margin-bottom: 2%; }
   #last { margin-right: auto; margin-left: 2%; }
   ul.menu li { width: auto; text-align: center; } }
 @media only screen and (min-width: 1028px) { figure { flex-basis: 23.5%; margin-bottom: 2%; }
   main div.fruitimg { margin: 0; }
-  #last { margin-right: 0; margin-left: 0; } }
+  #last { margin-right: 0; margin-left: 0; }
+  main h1 { padding-left: 0; }
+  header h1 { font-size: 2rem; }
+  header h2 { letter-spacing: .18rem; } }

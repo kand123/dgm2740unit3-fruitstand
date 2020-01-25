@@ -11,6 +11,10 @@ html {
     box-sizing: border-box;
   }
 
+
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
 header {
     display: grid;
     grid-template-columns: 92px auto;
@@ -27,33 +31,31 @@ header img {
 }
   
 header h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin-top: 2.5rem;
     font-family: 'Shadows Into Light', cursive;
     color: #333;
+    // font-family: 'Pacifico', cursive;
+    // font-family: 'Sigmar One', cursive;
+    font-family: 'Patrick Hand', cursive;
+    font-family: 'Unica One', cursive;
   }
 
 
   header h2 {
-    font-family: 'Shadows Into Light', cursive;
     color: #333;
+    font-size: 1rem;
+    letter-spacing: .11rem;
   }
 
   ul.menu {
     display: flex;
     background-color: $menuColor;
 }
-
-// ul.menu li {
-    
-    
-
-// } 
-
 nav ul li:first-child a {border-left:none;}
 
  nav ul li a {
-    border-left: 1px solid #777;
+    border-left: 1px solid #888;
     display: block;
     background-color: lighten($menuColor, 10%);
     color: #222;
@@ -61,17 +63,19 @@ nav ul li:first-child a {border-left:none;}
     padding: .8rem .5rem;
 }
 
-
-
-
 .active a {
       background-color: darken($menuColor, 20%);
       color: #eee;
 }
 nav ul li a:hover {
-    background-color: lighten($menuColor, 20%);
+    background-color: lighten($menuColor, 30%);
     color: #000;
 }
+
+ul.menu li {
+    width: 25%;
+    text-align: center;
+  }
 
 main {
     padding-bottom: 2%;
@@ -83,6 +87,7 @@ main div.fruitimg {
     margin: 0 2%;
     // margin: 0 2%;
     justify-content: space-between;
+    
 }
 
 header, nav, main, footer {
@@ -93,11 +98,12 @@ header, nav, main, footer {
 
 figure {
     flex-basis: 49%;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 figcaption{
     text-align: center;
+    font-size: .9rem;
 }
 
 main img {
@@ -107,7 +113,7 @@ main img {
 
 main h1 {
     padding: 1.5rem 0 .2rem 2%;
-    font-size: 1.6rem;
+    font-size: 1.5rem;
 }
 
 
@@ -116,16 +122,9 @@ footer {
     background-color: #ccc;
     color: #222;
     padding: 1rem 0;
-   
+   font-size: .9rem;
 
   }
 
-  ul.menu li {
-    // letter-spacing: 2px;
-    // border: none;
-    // border-right: 1px solid #333;
-    width: 25%;
-    text-align: center;
-  }
-
+  
  
